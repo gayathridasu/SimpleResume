@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline-block{
+            display: inline-block;
+            vertical-align: top;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var h1Cre = document.createElement("h1");
+
+        h1Cre.innerText="DASU GAYATHRI";
+
+        var center_cre1=document.createElement("center");
+
+        center_cre1.appendChild(h1Cre);
+
+        console.log(document);
+
+        var h3Cre_career=document.createElement("h3");
+
+        var fieldset_Cre=document.createElement("fieldset");
+
+        var legend_Cre=document.createElement("legend");
+
+        fieldset_Cre.innerText="Enthusiastic Computer Science Engineer with strong communication skills, adept at problem-solving and collaborating with diverse teams. Passionate about technology and innovation, committed to delivering high-quality solutions. Proven ability to learn and apply new technologies quickly.";
+
+
+        var boldCre=document.createElement("b");
+        
+
+        boldCre.innerText="Career Objective";
+
+        legend_Cre.appendChild(boldCre);
+
+        fieldset_Cre.appendChild(legend_Cre);
+
+        var h3Cre_tech=document.createElement("h3");
+       
+        h3Cre_tech.innerText=("Technical Skills");
+        
+        var li1_cre=document.createElement("li");
+
+        li1_cre.innerText="Html";
+
+        var li2_cre=document.createElement("li");
+
+        li2_cre.innerText="CSS";
+
+        var li3_cre=document.createElement("li");
+
+        li3_cre.innerText="Javascript";
+
+        var li4_cre=document.createElement("li");
+
+        li4_cre.innerText="Python";
+
+        var li5_cre=document.createElement("li");
+
+        li5_cre.innerText="Java";
+
+        var h3Cre_hob=document.createElement("h3");
+
+        h3Cre_hob.innerText="Hobbies";
+
+        var li1Cre=document.createElement("li");
+
+        li1Cre.innerText="Listening to music";
+
+        var li2Cre=document.createElement("li");
+
+        li2Cre.innerText="Reading books";
+
+        var li3Cre=document.createElement("li");
+
+        li3Cre.innerText="Watching movies";
+
+        var h3Cre_Dis=document.createElement("h3");
+
+        h3Cre_Dis.innerText="Disclaimer";
+
+        var p_Cre_Dis=document.createElement("p");
+
+        p_Cre_Dis.innerText="I hereby declare that the above information is true and correct to the best of my knowledge and belief."
+
+        var h4Cre_dat=document.createElement("h4");
+
+        h4Cre_dat.innerText="Date: 16th Aug 2024";
+
+        var h4Cre_sig=document.createElement("h4");
+
+        h4Cre_sig.innerText="Signature: D.Gayathri"
+
+        var imgCre=document.createElement("img");
+
+        imgCre.src="./Signature.jpeg"
+
+        imgCre.width="100";
+
+        console.log(imgCre);
+
+        var techSkillsDiv = document.createElement("div");
+        techSkillsDiv.className ="inline-block";
+
+        var hobbiesDiv = document.createElement("div");
+        hobbiesDiv.className = "inline-block";
+
+        techSkillsDiv.appendChild(h3Cre_tech);
+        techSkillsDiv.appendChild(li1_cre);
+        techSkillsDiv.appendChild(li2_cre);
+        techSkillsDiv.appendChild(li3_cre);
+        techSkillsDiv.appendChild(li4_cre);
+        techSkillsDiv.appendChild(li5_cre);
+
+        hobbiesDiv.appendChild(h3Cre_hob);
+        hobbiesDiv.appendChild(li1Cre);
+        hobbiesDiv.appendChild(li2Cre);
+        hobbiesDiv.appendChild(li3Cre);
+
+        document.body.appendChild(center_cre1);
+        document.body.appendChild(fieldset_Cre);
+        document.body.appendChild(h3Cre_career);
+        document.body.appendChild(techSkillsDiv);
+        document.body.appendChild(hobbiesDiv);
+        document.body.appendChild(h3Cre_Dis);
+        document.body.appendChild(p_Cre_Dis);
+        document.body.appendChild(h4Cre_dat);
+        document.body.appendChild(h4Cre_sig);
+        document.body.appendChild(imgCre);
+        
+    </script>
+</body>
+</html>
